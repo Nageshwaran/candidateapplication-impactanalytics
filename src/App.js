@@ -22,13 +22,12 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-        <Switch>
-          <Route exact path="/" component={Candidate} />
-          <Route  exact path="/shortlisted" component={Shortlisted} />
+          <Switch>
+            <Route exact path="/" component={Candidate} />
+            <Route exact path="/shortlisted" component={Shortlisted} />
             <Route exact path="/rejected" component={Rejected} />
-          <Route   path="/:id" component={CandidateDetails} />
+            <Route path="/:id" component={CandidateDetails} />
           </Switch>
-           
         </div>
       </Router>
     );
